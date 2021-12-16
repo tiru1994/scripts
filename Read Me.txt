@@ -1,0 +1,34 @@
+1. Log in to the server to be audited using the Oracle software owner account (it may be the Windows Administrator account).
+
+2. Execute the Oracle11g_Win.sql file after logging in to the database server using following command,
+   
+   sqlplus /nolog
+   connect / as sysdba
+   @Oracle 12C_Win.sql
+
+3. Enter the Oracle Home Path (directory into which all Oracle software is installed) when prompts, without a '\' at the end of the directory.
+Eg: C:\oraclexe\app\oracle\product\10.2.0\server
+
+4. Collect the output file which is created by the script. It will have the name in following syntax,
+
+   "Oracle12C_Windows.txt".
+
+5. Run 'Listener File.bat' with Administrator Rights.
+   
+6. Delete the script files and the output file from the server.
+
+Note:
+On some servers Manual Script for Oracle takes long time to get executed. 
+
+Reason - 
+Since password is set on listener, the command "lsnrctl status" returns an error-
+	TNS-01169: The listener has not recogonized 
+
+Resolution - 
+In order to run the script successfully, Local OS Authentication needs to be turned ON. To turn ON, go to the listener.ora file and add the following line :-
+	LOCAL_OS_AUTHENTICATION_LISTENER = ON 
+save and close the file and
+	LSNRCTL> reload
+
+This will ensure that the script executes completely using local OS authentication, keeping the password enabled on listener.
+

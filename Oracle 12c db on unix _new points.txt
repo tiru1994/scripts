@@ -1,0 +1,7 @@
+Ensure 'ADMIN_RESTRICTIONS_' Is Set to 'ON'
+Point Added in:
+Oracle 12c_Unix_v11.sh
+
+Ensure 'SECURE_REGISTER_' Is Set to 'TCPS' or 'IPC'
+Point Added in:
+Oracle 12c_Unix_v11.sh

@@ -1,0 +1,12 @@
+Oracle 11g on Unix:
+
+2.5.2 The Oracle REMOTE_LOGIN_PASSWORDFILE parameter should be set to EXCLUSIVE or NONE.
+
+Point Added in:
+Line(51-63) in .sql file
+Output in file : DBPARMS.TXT
+
+2.7.5 DBMS software libraries should be periodically backed up.
+
+Point Added as:
+Manual Check(mentioned in .sh file)

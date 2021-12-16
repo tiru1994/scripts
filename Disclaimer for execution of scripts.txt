@@ -1,0 +1,19 @@
+Script execution instructions 
+
+a) Scrutinize the contents of the script to ensure that it does not contain any statements, commands or any other code that might negatively influence the environment(s) in either a 
+security or operational way.
+ 
+b) Test the script on the test environment to ensure that it does not contain any statements, commands or any other code that might negatively influence the environment(s) in either a 
+security or operational way.
+ 
+c) The final responsibility for executing this script lies with the client.  
+ 
+d) It is advised to execute the script during off-peak hours.
+ 
+e) The client must remove all copies of the script as it is the property of State Bank of India (SBI) & Ernst & Young LLP. Please refer to the copyright notice under bullet (g) The client may retain the script results.
+
+f) This script is an audit aid and has been developed to extract the system settings. In case of any doubt or any inconsistency in the output, the auditor should refer to the secure configuration document which is the final authoritative source . Further adequate judgement needs to be used by the auditor for finalizing the audit findings and should not rely solely on the tool output for finalizing the findings.  
+
+g)  Copyright notice for the scripts:  © 2013 EY & SBI
+
+All rights reserved. Ernst & Young LLP refers to the network  of member firms of Ernst & Young LLP, each of which is a separate and independent legal entity.

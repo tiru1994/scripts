@@ -1,0 +1,16 @@
+
+1. Execute the Oracle12c_Unix_v11.sh from terminal using root privilege, on successful execution a text file will be generated.
+
+2. Execute the Oracle12c_Unix.sql file after logging in to the database server using following command,
+   
+   sqlplus /nolog
+   connect / as sysdba
+   @Oracle12c_Unix.sql
+
+3. Collect the output file which is created by the SQL script. It will have the name in following syntax,
+
+   "Oracle11g_Unix.txt"
+   "Oracle12c_Unix.txt"
+   "hostname_Compliance.txt"
+
+4. Share these text files

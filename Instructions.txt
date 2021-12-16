@@ -1,0 +1,40 @@
+
+This folder should contain following files   
+1. WIN2019.bat 
+2. accesschk.exe 
+3. DUMPSEC.EXE 
+4. Psinfo.exe 
+5. REG.EXE 
+6. SHOWACLS.EXE 
+7. Instructions
+
+ 
+Delete any other files if Present.
+
+
+Instructions to Run the Script
+
+1) Login as administrator
+
+2) EXPORT THE FOLLOWING AND SAVE IT IN THE SAME FOLDER AS OF THE SCRIPT
+	a. Account Lockout policy
+	1. Type gpedit.msc using run->Go to Computer Configuration->Go to Windows Settings->Go to security settings->Go to Account Policies->Go to Account Lockout 		Policy->Go to Action->Click on export and save it as text file, Name the text file as accountlockoutpolicy.txt
+
+	b. Password Policy
+	1. Type gpedit.msc using run->Go to Computer Configuration->Go to Windows Settings->Go to security settings->Go to Account Policies->Go to Password Policy->Go 	to Action->Click on export and save it as text file, Name the text file as passwordpolicy.txt
+
+	c. Audit Policy
+	1. Type gpedit.msc using run->Go to Computer Configuration->Go to Windows Settings->Go to security settings->Go to Local Policies->Go to Audit Policy->Go to 	Action->Click on export and save it as text file, Name the text file as auditpolicy.txt
+
+	d. User Rights Assignment
+	1. Type gpedit.msc using run->Go to Computer Configuration->Go to Windows Settings->Go to security settings->Go to Local Policies->Go to User Rights 	Assignment->Go to Action->Click on export and save it as text file, Name the text file as userrights.txt
+	
+	e. Security Options
+	1. Type gpedit.msc using run->Go to Computer Configuration->Go to Windows Settings->Go to security settings->Go to Local Policies->Go to Security Options->Go 	to Action->Click on export and save it as text file, Name the text file as securityoptions.txt
+
+	f. Administrative templates
+	1. Type gpedit.msc using run->Go to Computer Configuration->Go to Administrative Templates->Go to all settings->Go to Action->Click on export and save file as admtemplates.txt
+
+
+2) Run the WIN2019.bat file
+3) Output.txt  will be generated. Copy this file and share
